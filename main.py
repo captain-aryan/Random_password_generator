@@ -7,18 +7,19 @@ class Password:
         self.charset = charset
         self.length = length
         self.char_array = []
+        self.password = []
 
     def set_the_charset(self):
         if ('l' in self.charset):
             self.char_array.append(string.ascii_lowercase)
 
-        elif ('u' in self.charset):
+        if ('u' in self.charset):
             self.char_array.append(string.ascii_uppercase)
 
-        elif ('d' in self.charset):
+        if ('d' in self.charset):
             self.char_array.append(string.digits)
 
-        elif ('s' in self.charset):
+        if ('s' in self.charset):
             self.char_array.append(string.punctuation)
     
     def get_char_array(self):
@@ -26,4 +27,8 @@ class Password:
         return self.char_array
     
     def generate_password(self):
-        
+        print(self.char_array)
+        for i in range(len(self.length)):
+            outer_index = random.randrange(0, len(self.char_array))
+            inner_index = random.randrange(0, len(self.char_array[outer_index]))
+            self.password.append(self.char_array[outer_index] [inner_index])
