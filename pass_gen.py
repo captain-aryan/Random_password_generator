@@ -8,4 +8,4 @@ print(f'''[+] -l, Enters the lowercase list
 password = Password(input("Your CMD > "), int(input("Length of Password > ")))
 password.set_the_charset()
 password.generate_password()
-print(password.get_password())
+print("Random Password is:",password.get_password())

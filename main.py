@@ -26,7 +26,7 @@ class Password:
         return self.char_array
     
     def generate_password(self):
-        print(self.char_array)
+        # print(self.char_array)
         for i in range(self.length):
             outer_index = random.randrange(0, len(self.char_array))
             inner_index = random.randrange(0, len(self.char_array[outer_index]))
