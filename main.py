@@ -1,8 +1,22 @@
 import string
 import random
+import argparse
+
+argparse = argparse.ArgumentParser(description="Random Password Generator", usage="python3 pass_gen.py -l LOWERCASE -u UPPERCASE -d NUMERIC -s SPECIAL_CHAR")
+argparse.add_argument("-l","--lowercase",help="Enters the lowercase list")
+argparse.add_argument("-u","--uppercase",help="Enters the uppercase list")
+argparse.add_argument("-d","--numeric",help="Enters the numbers list")
+argparse.add_argument("-s","--special",help="Enters the special characters list")
+
+args = argparse.parse_args()
+lowercase = args.lowercase
+uppercase = args.uppercase
+numbers = args.numbers
+special_char = args.special_char
+
+print(f"[+] ")
 
 class Password:
-
     def __init__(self, charset, length):
         self.charset = charset
         self.length = length
