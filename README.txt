@@ -6,7 +6,7 @@ USAGE:
 -n [NUMBERS], Enters the numbers list
 -s [SPECIAL_CHARACTERS], Enters the special characters list
 
-Lenght of the password is must be in numeric format (0-infite)
+Lenght of the password is must be in numeric format (0-infinite)
 
 EXAMPLE:
 For Perfect Password:
