@@ -1,6 +1,6 @@
 from main import Password
 import argparse
-#
+
 args = argparse.ArgumentParser('''[+] l, Enters the lowercase password
        [+] u, Enters the uppercase password
        [+] n, Enters the numbers password
