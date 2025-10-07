@@ -1,13 +1,11 @@
 from main import Password
 import argparse
 
-print(f'''[+] l, Enters the lowercase password
-[+] u, Enters the uppercase password
-[+] n, Enters the numbers password
-[+] s, Enters the special characters password
+args = argparse.ArgumentParser('''[+] l, Enters the lowercase password
+       [+] u, Enters the uppercase password
+       [+] n, Enters the numbers password
+       [+] s, Enters the special characters password
 ''')
-
-args = argparse.ArgumentParser()
 args.add_argument('-c','--charset', required=True)
 args.add_argument('-l','--length', required=True)
 options = args.parse_args()
