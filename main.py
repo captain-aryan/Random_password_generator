@@ -22,7 +22,6 @@ class Password:
             self.char_array.append(string.punctuation)
     
     def get_char_array(self):
-    
         return self.char_array
     
     def generate_password(self):
